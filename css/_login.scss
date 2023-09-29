@@ -1,7 +1,16 @@
-.form{
-    box-shadow: 0px 0px 1px 0px;
+.col{
+    height: 100vh !important;
+}
+
+.part1{
+    background-color: rgb(66,83,177)
 }
 
 .nuevo-usuario{
     display: block;
+}
+
+.input-usuario, .input-contraseña{
+    border: none;
+    border-radius: 5px;
 }
