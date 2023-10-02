@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?2yjoea');
-  src:  url('fonts/icomoon.eot?2yjoea#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?2yjoea') format('truetype'),
-    url('fonts/icomoon.woff?2yjoea') format('woff'),
-    url('fonts/icomoon.svg?2yjoea#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?r913p1');
+  src:  url('fonts/icomoon.eot?r913p1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?r913p1') format('truetype'),
+    url('fonts/icomoon.woff?r913p1') format('woff'),
+    url('fonts/icomoon.svg?r913p1#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,9 +25,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-user:before {
-  content: "\e971";
+.icon-home:before {
+  content: "\e900";
 }
-.icon-key:before {
-  content: "\e98d";
+.icon-box-add:before {
+  content: "\e95e";
+}
+.icon-box-remove:before {
+  content: "\e95f";
+}
+.icon-user-plus:before {
+  content: "\e973";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-filter:before {
+  content: "\ea5b";
+}
+.icon-dropbox:before {
+  content: "\eaae";
 }

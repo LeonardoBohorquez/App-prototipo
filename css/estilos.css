@@ -1,10 +1,24 @@
 @charset "UTF-8";
+.logo {
+  color: #fff !important;
+  font-size: 150px;
+}
+
 .col {
   height: 100vh !important;
 }
 
 .part1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(66, 83, 177);
+}
+
+.box-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nuevo-usuario {
@@ -14,4 +28,36 @@
 .input-usuario, .input-contraseña {
   border: none;
   border-radius: 5px;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+label, h2 {
+  color: #fff !important;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 16px !important;
+}
+
+.iniciar {
+  background-color: rgb(91, 114, 243) !important;
+  border: none !important;
+}
+.iniciar:hover {
+  background-color: rgb(48, 63, 138) !important;
+}
+
+.nuevo-usuario {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .img, .box-img {
+    display: none !important;
+  }
 }/*# sourceMappingURL=estilos.css.map */

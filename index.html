@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inventory</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -12,22 +12,25 @@
 <body> 
   <main class="main container-fluid 100-vh">
     <div class="row">
-      <div class="part1 col col-lg-6 centro d-flex justify-content-center align-items-center">
-          <form action="" class="form ">
-            <h2>¡Inicia sesion para comenzar!</h2>
+      <div class="part1 col col-lg-6 col-md-12">
+          <form action="" class="form container w-50 ">
+            <div class="logo text-center">
+              <span class="icon-dropbox"></span>
+            </div>
+            <h2 class="text-center">INVENTORY</h2>
             <div class="">
-              <label for="usuario" class="label-usuario" id="usuario">Usuario</label>
-              <input type="text" class="input-usuario w-100 p-3" name="usuario">
+              <label for="usuario" class="label-usuario">Usuario</label>
+              <input type="text" class="input-usuario w-100 p-3" name="usuario" id="usuario">
             </div>
             <div class="group-input">
-              <label for="contraseña" class="label-contraseña w-100" id="contraseña">Contraseña</label>
-              <input type="password" class="input-contraseña w-100 p-3">
+              <label for="contraseña" class="label-contraseña w-100">Contraseña</label>
+              <input type="password" class="input-contraseña w-100 p-3" id="contraseña">
             </div>
-            <input type="button" value="Iniciar" class="btn btn-primary w-100 mt-3 p-2">
-            <a href="#" class="nuevo-usuario mt-2 w-100 text-center">Crear nuevo usuario</a>
+            <input type="button" value="Iniciar" class="iniciar btn btn-primary w-100 mt-3 p-2">
+            <a href="#" class="nuevo-usuario mt-2 w-100 text-center mt-3"><span class="icon-user-plus"></span> Crear nuevo usuario</a>
           </form>
       </div>
-      <div class="col col-lg-6 d-flex justify-content-center align-items-center">
+      <div class="col col-lg-6  box-img">
         <div class="img">
           <img src="img/na_feb_10.jpg" alt="" class="w-100">
         </div>
