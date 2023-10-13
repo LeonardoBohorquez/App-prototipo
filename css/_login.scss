@@ -24,7 +24,7 @@
     display: block;
 }
 
-.input-usuario, .input-contraseña{
+.input-usuario, .input-contraseña,.input-repetir-contraseña , .input-nombre, .input-apellido{
     border: none;
     border-radius: 5px;
 }
@@ -42,7 +42,7 @@ label{
     font-size: 16px !important;
 }
 
-.iniciar{
+.iniciar, .guardar, .cancelar{
     background-color:  rgb(91, 114, 243) !important;
     border: none !important;
     &:hover{

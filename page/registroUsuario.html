@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro Usuario</title>
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <main class="main container-fluid h-100vh">
+        <div class="row">
+          <div class="part1 col col-lg-6 col-md-12">
+              <form action="" class="form container w-50 " id="form-usuario">
+                <div class="logo text-center">
+                  <span class="icon-user-plus"></span>
+                </div>
+                <h2 class="text-center">REGISTRO DE USUARIO</h2>
+                <div class="">
+                    <input type="text" class="input-nombre w-100 p-2 m-2" name="nombre" id="nombre" placeholder="Nombre">
+                  </div>
+                  <div class="">
+                    <input type="text" class="input-apellido w-100 p-2 m-2" name="apellido" id="apellido" placeholder="Apellido">
+                  </div>
+                <div class="">
+                  <input type="text" class="input-usuario w-100 p-2 m-2" name="usuario" id="usuario" placeholder="Usuario">
+                </div>
+                <div class="group-input">
+                  <input type="password" class="input-contraseña w-100 p-2 m-2" id="contraseña" placeholder="Contraseña">
+                  <input type="password" class="input-repetir-contraseña w-100 p-2 m-2" id="repetir-contraseña" placeholder="Repita contraseña">
+                </div>
+                <input type="button" value="Guardar" class="guardar btn btn-primary w-100 m-2 p-2" id="guardar">
+                <a href="../index.html" class="cancelar w-100 text-center btn btn-primary w-100 m-2 p-2">Iniciar Sesion</a>
+              </form>
+          </div>
+          <div class="col col-lg-6  box-img">
+            <div class="img">
+              <img src="../img/Wavy_Tech-28_Single-10.jpg" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <script src="../javascript/formularioRegistro.js"></script>
+</body>
+</html>
