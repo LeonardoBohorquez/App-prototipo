@@ -1,6 +1,6 @@
 
 let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
-console.log(usuarios)
+
 
 function registroUsuarios(){
     llamarUsuarios();
@@ -11,8 +11,6 @@ function registroUsuarios(){
     let repetirContraseña = document.getElementById('repetir-contraseña');
     let guardar = document.getElementById('guardar');
 
-
-
 guardar.addEventListener('click', function(){
     let formUsuario = document.getElementById('form-usuario');
     let nombreRegistro = nombre.value.trim();
@@ -21,23 +19,41 @@ guardar.addEventListener('click', function(){
     let contraseñaRegistro = contraseña.value;
 
     if(nombreRegistro === '' || apellidoRegistro === '' || usuarioRegistro  === '' || contraseña.value === '' || repetirContraseña.value === ''){
-        alert('debe llenar todos los campos')
+        Swal.fire({
+            icon: "error",
+            title: "Debe completar todos los campos",
+            showConfirmButton: false,
+            timer: 3000
+          });
         return;
     }else if(contraseña.value === repetirContraseña.value){
-        alert('usuario registrado')
+        Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Usuario Creado Exitosamente",
+            showConfirmButton: false,
+            timer: 3500, // Ajusta el tiempo de espera a 5 segundos
+            didClose: () => {
+                let nuevoUsuario = {
+                    nombre: nombreRegistro,
+                    apellido: apellidoRegistro,
+                    usuario: usuarioRegistro,
+                    contraseña: contraseñaRegistro,
+                }
 
-        let nuevoUsuario = {
-            nombre: nombreRegistro,
-            apellido: apellidoRegistro,
-            usuario: usuarioRegistro,
-            contraseña: contraseñaRegistro,
-        }
-        usuarios.push(nuevoUsuario);
-        formUsuario.reset();
-        console.log(usuarios);
-        usuariosLocalStore();
+                usuarios.push(nuevoUsuario);
+                formUsuario.reset();
+                usuariosLocalStore();
+                window.location.href = '../index.html';
+            }
+        });
     }else{
-        alert('Las contraseñas ingresadas no son iguales')
+        Swal.fire({
+            icon: "error",
+            title: "Las contraseñas no son iguales",
+            showConfirmButton: false,
+            timer: 3000
+          });
     }
  })
 }

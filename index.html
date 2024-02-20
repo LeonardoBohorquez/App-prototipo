@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body> 
 
   <main class="main container-fluid  h-100vh">
     <div class="row">
       <div class="part1 col col-lg-6 col-md-12">
-          <form action="" class="form container w-50 ">
+          <form action="" class="form container w-50 " id="form-login">
             <div class="logo text-center">
               <span class="icon-dropbox"></span>
             </div>
-            <h2 class="text-center">INVENTORY</h2>
+            <h2 class="text-center titulo">INVENTORY</h2>
             <div class="">
               <label for="usuario" class="label-usuario">Usuario</label>
-              <input type="text" class="input-usuario w-100 p-3" name="usuario" id="usuario">
+              <input type="text" class="input-usuario w-100 p-3" name="usuario" id="login-usuario">
             </div>
             <div class="group-input">
               <label for="contraseña" class="label-contraseña w-100">Contraseña</label>
-              <input type="password" class="input-contraseña w-100 p-3" id="contraseña">
+              <input type="password" class="input-contraseña w-100 p-3" id="login-contraseña">
             </div>
-            <input type="button" value="Iniciar" class="iniciar btn btn-primary w-100 mt-3 p-2">
+            <input type="button" value="Iniciar" class="iniciar btn btn-primary w-100 mt-3 p-2" id="iniciar">
             <a href="page/registroUsuario.html" class="nuevo-usuario mt-2 w-100 text-center mt-3">Crear nuevo usuario</a>
           </form>
       </div>

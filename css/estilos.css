@@ -34,7 +34,7 @@ input:focus {
   outline: none !important;
 }
 
-label, h2 {
+label, .titulo {
   color: #fff !important;
 }
 
@@ -60,4 +60,7 @@ label {
   .img, .box-img {
     display: none !important;
   }
+}
+.registro-usuario {
+  color: white !important;
 }/*# sourceMappingURL=estilos.css.map */
