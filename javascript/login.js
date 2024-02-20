@@ -28,7 +28,7 @@ function ValidarUsuario(){
                 });
                 Toast.fire({
                   icon: "success",
-                  title: "Bienvenido "  + buscarUsuario.nombre + " " + buscarUsuario.apellido,
+                  title: "Bienvenido - "  + buscarUsuario.nombre + " " + buscarUsuario.apellido,
                 });
                 formLogin.reset() 
               }else{

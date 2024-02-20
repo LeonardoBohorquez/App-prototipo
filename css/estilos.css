@@ -63,4 +63,25 @@ label {
 }
 .registro-usuario {
   color: white !important;
+}
+
+.main-inicio {
+  height: 100vh;
+}
+
+.menu {
+  width: 15%;
+  height: 100vh;
+  padding-top: 50px;
+  background-color: rgb(66, 83, 177);
+}
+.menu p {
+  margin-top: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.icon-dropbox {
+  font-size: 100px;
+  color: white;
 }/*# sourceMappingURL=estilos.css.map */
